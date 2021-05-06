@@ -81,6 +81,7 @@ body {
   color: white;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  cursor: pointer;
 }
 
 #navbar .navbtn > a:hover {
