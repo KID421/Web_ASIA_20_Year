@@ -1,0 +1,158 @@
+$color-black: #444;
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 標楷體;
+    box-sizing: border-box;
+    color: $color-black;
+}
+
+body {
+    // background-image: url(./img/version1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    // overflow: hidden;
+}
+
+#area-top {
+    // opacity: 0.3;
+
+    background-image: url(./img/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 79vh;
+
+    #title {
+        padding: 39px 0;
+        display: grid;
+        grid-template-columns: 43% 48% 9%;
+
+        #title-box {
+            #title-english {
+                width: 900px;
+            }
+            #title-chinese {
+                text-align: right;
+                padding-right: 140px;
+                line-height: 0;
+                font-size: 38px;
+                font-weight: 200;
+            }
+        }
+
+        #logo {
+            padding-top: 10px;
+            width: 120px;
+            transition: 0.3s;
+
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+    }
+}
+
+#navbar {
+    padding: 27px 0;
+    text-align: center;
+
+    .navbtn {
+        display: inline-block;
+        margin-right: 35px;
+        position: relative;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        > a {
+            text-decoration: none;
+            display: inline-block;
+            padding: 9px 32px;
+            font-size: 32px;
+            color: white;
+            transition: 0.5s;
+    
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+
+        &:nth-child(1) {
+            background: #F8CA2D;
+            color: $color-black;
+
+            .subnav {
+                border-color: #F8CA2D;
+            }
+        }
+        &:nth-child(2) {
+            background: #F8822D;
+        }
+        &:nth-child(3) {
+            background: #F8502D;
+        }
+        &:nth-child(4) {
+            background: #E83A3C;
+
+            .subnav {
+                border-color: #E83A3C;
+            }
+        }
+        &:nth-child(5) {
+            background: #AF3493;
+        }
+        &:nth-child(6) {
+            background: #D462AB;
+        }
+        &:nth-child(7) {
+            background: #F896C9;
+            color: $color-black;
+        }
+        &:nth-child(8) {
+            background: #FFCCDC;
+            color: $color-black;
+        }
+
+        &:hover .subnav {
+            opacity: 1;
+        }
+    }
+
+    .subnav {
+        position: absolute;
+        top: 55px;
+        left: 20px;
+        border-left: 2px solid #666;
+        opacity: 0;
+        transition: 0.5s;
+        
+        > a {
+            display: block;
+            font-size: 22px;
+            text-decoration: none;
+            font-weight: 0;
+            padding: 6px 12px;
+            transition: 0.5s;
+
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+    }
+}
+
+#content {
+    height: 300px;
+}
+
+footer {
+    background: #297096;
+    text-align: center;
+    color: white;
+    font-family: 微軟正黑體;
+    padding: 30px;
+    font-size: 12px;
+}
