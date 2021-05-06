@@ -24,6 +24,16 @@ body {
     background-size: cover;
     height: 106vh;
 
+    @media screen and (max-width: 1850px) {
+        height: 116vh;
+    }
+    @media screen and (max-width: 1600px) {
+        height: 113vh;
+    }
+    @media screen and (max-width: 1300px) {
+        height: 100vh;
+    }
+
     #title {
         padding: 100px 0;
         display: grid;
@@ -59,6 +69,7 @@ body {
     text-align: center;
     height: 106vh;
     background: #2D4583;
+    box-shadow: 2px 0px 50px rgba(0, 0, 50, 0.8);
 
     #logo {
         width: 6vw;
@@ -110,9 +121,10 @@ body {
             font-family: 微軟正黑體;
             font-weight: 600;
             letter-spacing: 5px;
+            width: 100%;
     
             &:hover {
-                transform: scale(1.05);
+                background: #FF9E14;
             }
         }
 
@@ -123,66 +135,59 @@ body {
 
     .subnav {
         position: absolute;
-        top: 55px;
-        left: 20px;
-        border-left: 2px solid #666;
+        top: 25px;
+        right: -200px;
+        background: #FF9E14;
+        border-radius: 0 10px 10px 0;
+        box-shadow: 2px -5px 30px rgba(0, 0, 50, 0.5);
         opacity: 0;
         transition: 0.5s;
-
-        @media screen and (max-width: 1850px) {
-            top: 50px;
-        }
-        @media screen and (max-width: 1550px) {
-            top: 47px;
-        }
-        @media screen and (max-width: 1310px) {
-        }
-        @media screen and (max-width: 1180px) {
-            top: 42px;
-        }
-        @media screen and (max-width: 1024px) {
-            top: 40px;
-            left: 10px;
-        }
         
         > a {
             display: block;
-            font-size: 22px;
+            color: white;
+            font-size: 30px;
             text-decoration: none;
             font-weight: 0;
-            padding: 10px 12px 6px;
+            padding: 10px 30px;
             transition: 0.5s;
+            border-bottom: 1px solid white;
+            font-family: 微軟正黑體;
+            
 
             &:hover {
-                transform: scale(1.05);
+                color: #2D4583;
             }
 
-            @media screen and (max-width: 1850px) {
-                font-size: 20px;
-                padding: 10px 12px 6px;
+            &:last-child {
+                border-bottom: none;
             }
-            @media screen and (max-width: 1550px) {
-                font-size: 16px;
-                padding: 10px 12px 6px;
-            }
-            @media screen and (max-width: 1310px) {
-                font-size: 14px;
-            }
-            @media screen and (max-width: 1180px) {
-                font-size: 10px;
-            }
-            @media screen and (max-width: 1024px) {
-                font-size: 8px;
-            }
+        }
+    }
+    
+    @media screen and (max-width: 1850px) {
+        height: 116vh;
+    }
+    @media screen and (max-width: 1600px) {
+        height: 113vh;
+    }
+    @media screen and (max-width: 1300px) {
+        height: 100vh;
+
+        .navbtn a {
+            font-size: 24px !important;
         }
     }
 }
 
 footer {
+    position: relative;
+    width: 100%;
     background: white;
     text-align: center;
     color: #297096;
     font-family: 微軟正黑體;
     padding: 30px;
     font-size: 12px;
+    z-index: 2;
 }

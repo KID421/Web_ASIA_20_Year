@@ -21,6 +21,24 @@ body {
   height: 106vh;
 }
 
+@media screen and (max-width: 1850px) {
+  #area-top {
+    height: 116vh;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  #area-top {
+    height: 113vh;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  #area-top {
+    height: 100vh;
+  }
+}
+
 #area-top #title {
   padding: 100px 0;
   display: -ms-grid;
@@ -56,6 +74,8 @@ body {
   text-align: center;
   height: 106vh;
   background: #2D4583;
+  -webkit-box-shadow: 2px 0px 50px rgba(0, 0, 50, 0.8);
+          box-shadow: 2px 0px 50px rgba(0, 0, 50, 0.8);
 }
 
 #navbar #logo {
@@ -112,11 +132,11 @@ body {
   font-family: 微軟正黑體;
   font-weight: 600;
   letter-spacing: 5px;
+  width: 100%;
 }
 
 #navbar .navbtn > a:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  background: #FF9E14;
 }
 
 #navbar .navbtn:hover .subnav {
@@ -125,92 +145,68 @@ body {
 
 #navbar .subnav {
   position: absolute;
-  top: 55px;
-  left: 20px;
-  border-left: 2px solid #666;
+  top: 25px;
+  right: -200px;
+  background: #FF9E14;
+  border-radius: 0 10px 10px 0;
+  -webkit-box-shadow: 2px -5px 30px rgba(0, 0, 50, 0.5);
+          box-shadow: 2px -5px 30px rgba(0, 0, 50, 0.5);
   opacity: 0;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
-@media screen and (max-width: 1850px) {
-  #navbar .subnav {
-    top: 50px;
-  }
-}
-
-@media screen and (max-width: 1550px) {
-  #navbar .subnav {
-    top: 47px;
-  }
-}
-
-@media screen and (max-width: 1180px) {
-  #navbar .subnav {
-    top: 42px;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  #navbar .subnav {
-    top: 40px;
-    left: 10px;
-  }
-}
-
 #navbar .subnav > a {
   display: block;
-  font-size: 22px;
+  color: white;
+  font-size: 30px;
   text-decoration: none;
   font-weight: 0;
-  padding: 10px 12px 6px;
+  padding: 10px 30px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  border-bottom: 1px solid white;
+  font-family: 微軟正黑體;
 }
 
 #navbar .subnav > a:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  color: #2D4583;
+}
+
+#navbar .subnav > a:last-child {
+  border-bottom: none;
 }
 
 @media screen and (max-width: 1850px) {
-  #navbar .subnav > a {
-    font-size: 20px;
-    padding: 10px 12px 6px;
+  #navbar {
+    height: 116vh;
   }
 }
 
-@media screen and (max-width: 1550px) {
-  #navbar .subnav > a {
-    font-size: 16px;
-    padding: 10px 12px 6px;
+@media screen and (max-width: 1600px) {
+  #navbar {
+    height: 113vh;
   }
 }
 
-@media screen and (max-width: 1310px) {
-  #navbar .subnav > a {
-    font-size: 14px;
+@media screen and (max-width: 1300px) {
+  #navbar {
+    height: 100vh;
   }
-}
-
-@media screen and (max-width: 1180px) {
-  #navbar .subnav > a {
-    font-size: 10px;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  #navbar .subnav > a {
-    font-size: 8px;
+  #navbar .navbtn a {
+    font-size: 24px !important;
   }
 }
 
 footer {
+  position: relative;
+  width: 100%;
   background: white;
   text-align: center;
   color: #297096;
   font-family: 微軟正黑體;
   padding: 30px;
   font-size: 12px;
+  z-index: 2;
 }
 /*# sourceMappingURL=style3.css.map */
