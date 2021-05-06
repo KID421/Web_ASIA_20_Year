@@ -1,0 +1,369 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 標楷體;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #444;
+}
+
+body {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+}
+
+#area-top {
+  background-image: url(./img/bg2.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 0 -10px;
+  height: 105vh;
+  width: 100%;
+  position: relative;
+}
+
+#area-top #title {
+  position: absolute;
+  bottom: 430px;
+  background: #444;
+  width: 100%;
+  height: 50px;
+  z-index: 2;
+}
+
+#area-top #title #title-box {
+  position: absolute;
+  bottom: 0px;
+  padding-left: 56px;
+  width: 100%;
+}
+
+#area-top #title #title-box h2, #area-top #title #title-box div {
+  display: inline-block;
+}
+
+#area-top #title #title-box #title-name {
+  color: white;
+  font-size: 4.9vw;
+  letter-spacing: 2px;
+  font-family: 'Roboto', sans-serif;
+}
+
+#area-top #title #title-box #title-year {
+  color: #FF00A0;
+  font-size: 6.9vw;
+  letter-spacing: 5px;
+  font-weight: 900;
+  font-family: 'Roboto', sans-serif;
+}
+
+#area-top #title #title-box #title-sub {
+  text-align: center;
+  position: relative;
+  padding-left: 20px;
+  width: 30vw;
+  height: 300px;
+}
+
+#area-top #title #title-box #title-sub #title-anniversary {
+  font-size: 3.6vw;
+  letter-spacing: 2px;
+  font-family: 'Roboto', sans-serif;
+  vertical-align: bottom;
+  position: absolute;
+  bottom: 0px;
+}
+
+#area-top #title #title-box #title-sub #title-chinese {
+  color: white;
+  font-family: 微軟正黑體;
+  font-size: 1.7vw;
+  font-weight: 400;
+  letter-spacing: 0.7vw;
+  position: absolute;
+  width: 25vw;
+  bottom: -25px;
+  left: 1.5vw;
+}
+
+#area-top #title #title-box #logo {
+  position: absolute;
+  right: 3vw;
+  width: 6.5vw;
+  bottom: 20px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#area-top #title #title-box #logo:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+@media screen and (max-width: 1880px) {
+  #area-top {
+    height: 130vh;
+    background-size: 110%;
+  }
+  #area-top #title {
+    top: 30vw;
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  #area-top {
+    height: 100vh;
+    background-size: 100%;
+  }
+  #area-top #title {
+    top: 28vw;
+  }
+  #area-top #title-anniversary {
+    bottom: 5px !important;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  #area-top {
+    height: 100vh;
+    background-size: 100%;
+  }
+  #area-top #title {
+    top: 26.5vw;
+  }
+  #area-top #title-anniversary {
+    bottom: 10px !important;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  #area-top {
+    height: 90vh;
+    background-size: 100%;
+  }
+  #area-top #title-anniversary {
+    font-size: 3em !important;
+  }
+  #area-top #title-chinese {
+    bottom: -15px !important;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  #area-top {
+    height: 85vh;
+    background-size: 100%;
+  }
+}
+
+@media screen and (max-width: 1380px) {
+  #area-top #title-anniversary {
+    font-size: 2.6em !important;
+    bottom: 15px !important;
+  }
+  #area-top #title-chinese {
+    bottom: -15px !important;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  #area-top {
+    height: 75vh;
+    background-size: 100%;
+  }
+  #area-top #title-box {
+    padding-bottom: 10px;
+  }
+  #area-top #title-name {
+    font-size: 4vw !important;
+  }
+  #area-top #title-year {
+    font-size: 6vw !important;
+  }
+  #area-top #title-anniversary {
+    font-size: 2.3em !important;
+    bottom: 10px !important;
+  }
+  #area-top #title-chinese {
+    bottom: -10px !important;
+    left: 0.5vw !important;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  #area-top {
+    height: 70vh;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #area-top {
+    height: 60vh;
+  }
+}
+
+#navbar {
+  padding: 27px 0;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  bottom: -2vw;
+}
+
+@media screen and (max-width: 1880px) {
+  #navbar {
+    top: 31vw;
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  #navbar {
+    top: 28vw;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  #navbar {
+    top: 27.8vw;
+  }
+}
+
+#navbar .row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 19% 19% 19% 19% auto;
+      grid-template-columns: auto 19% 19% 19% 19% auto;
+}
+
+#navbar .row > div {
+  mix-blend-mode: multiply;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#navbar .row:nth-child(1) > div:nth-child(odd) {
+  background: #9CCEBD;
+}
+
+#navbar .row:nth-child(1) > div:nth-child(even) {
+  background: #FFEB41;
+}
+
+#navbar .row:nth-child(2) > div:nth-child(even) {
+  background: #9CCEBD;
+}
+
+#navbar .row:nth-child(2) > div:nth-child(odd) {
+  background: #FFEB41;
+}
+
+#navbar .row a {
+  color: #444;
+  font-size: 2.8em;
+  list-style: 2px;
+  font-weight: 900;
+}
+
+#navbar .navbtn {
+  display: inline-block;
+  position: relative;
+  height: 12vw;
+}
+
+@media screen and (max-width: 1880px) {
+  #navbar .navbtn {
+    height: 13vw;
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  #navbar .navbtn {
+    height: 11vw;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  #navbar .navbtn {
+    height: 11vw;
+  }
+}
+
+#navbar .navbtn:last-child {
+  margin-right: 0;
+}
+
+#navbar .navbtn > a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 9px 32px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+  font-size: 2vw;
+}
+
+#navbar .navbtn > a:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+#navbar .navbtn:hover .subnav {
+  opacity: 1;
+  display: block;
+}
+
+#navbar .navbtn.navhavesub {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+#navbar .navbtn.navhavesub:hover > a {
+  opacity: 0;
+  display: none;
+}
+
+#navbar .subnav {
+  display: none;
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#navbar .subnav > a {
+  display: block;
+  font-size: 22px;
+  text-decoration: none;
+  font-weight: 0;
+  padding: 3px 12px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-family: 微軟正黑體;
+}
+
+#navbar .subnav > a:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+#content {
+  height: 0;
+}
+
+footer {
+  background: white;
+  text-align: center;
+  color: #297096;
+  font-family: 微軟正黑體;
+  padding: 30px;
+  font-size: 12px;
+}
+/*# sourceMappingURL=style2.css.map */
