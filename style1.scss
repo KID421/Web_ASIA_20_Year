@@ -11,7 +11,7 @@ $color-black: #444;
 body {
     // background-image: url(./img/version1.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
     width: 100%;
     // overflow: hidden;
 }
@@ -30,12 +30,17 @@ body {
         grid-template-columns: 43% 48% 9%;
 
         #title-box {
+            text-align: right;
+            padding-right: 40px;
+
             #title-english {
-                width: 900px;
+                // width: 900px;
+                width: 100%;
             }
             #title-chinese {
                 text-align: right;
-                padding-right: 140px;
+                // padding-right: 150px;
+                padding-right: 10%;
                 line-height: 0;
                 font-size: 38px;
                 font-weight: 200;
@@ -44,7 +49,8 @@ body {
 
         #logo {
             padding-top: 10px;
-            width: 120px;
+            // width: 120px;
+            width: 70%;
             transition: 0.3s;
 
             &:hover {
@@ -60,7 +66,7 @@ body {
 
     .navbtn {
         display: inline-block;
-        margin-right: 35px;
+        margin-right: 2%;
         position: relative;
 
         &:last-child {
@@ -78,12 +84,35 @@ body {
             &:hover {
                 transform: scale(1.05);
             }
+
+            @media screen and (max-width: 1850px) {
+                font-size: 30px;
+                padding: 9px 18px;
+            }
+            @media screen and (max-width: 1550px) {
+                font-size: 26px;
+                padding: 9px 15px;
+            }
+            @media screen and (max-width: 1310px) {
+                font-size: 24px;
+                padding: 9px 10px;
+            }
+            @media screen and (max-width: 1180px) {
+                font-size: 20px;
+                padding: 9px 8px;
+            }
+            @media screen and (max-width: 1024px) {
+                font-size: 18px;
+                padding: 9px 6px;
+            }
         }
 
         &:nth-child(1) {
             background: #F8CA2D;
-            color: $color-black;
 
+            a {
+                color: $color-black;
+            }
             .subnav {
                 border-color: #F8CA2D;
             }
@@ -109,11 +138,17 @@ body {
         }
         &:nth-child(7) {
             background: #F896C9;
-            color: $color-black;
+
+            a {
+                color: $color-black;
+            }
         }
         &:nth-child(8) {
             background: #FFCCDC;
-            color: $color-black;
+
+            a {
+                color: $color-black;
+            }
         }
 
         &:hover .subnav {
@@ -128,6 +163,22 @@ body {
         border-left: 2px solid #666;
         opacity: 0;
         transition: 0.5s;
+
+        @media screen and (max-width: 1850px) {
+            top: 50px;
+        }
+        @media screen and (max-width: 1550px) {
+            top: 47px;
+        }
+        @media screen and (max-width: 1310px) {
+        }
+        @media screen and (max-width: 1180px) {
+            top: 42px;
+        }
+        @media screen and (max-width: 1024px) {
+            top: 40px;
+            left: 10px;
+        }
         
         > a {
             display: block;
@@ -139,6 +190,22 @@ body {
 
             &:hover {
                 transform: scale(1.05);
+            }
+
+            @media screen and (max-width: 1850px) {
+                font-size: 20px;
+            }
+            @media screen and (max-width: 1550px) {
+                font-size: 16px;
+            }
+            @media screen and (max-width: 1310px) {
+                font-size: 14px;
+            }
+            @media screen and (max-width: 1180px) {
+                font-size: 10px;
+            }
+            @media screen and (max-width: 1024px) {
+                font-size: 8px;
             }
         }
     }
