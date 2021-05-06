@@ -220,7 +220,7 @@ body {
   font-size: 22px;
   text-decoration: none;
   font-weight: 0;
-  padding: 6px 12px;
+  padding: 10px 12px 6px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -233,12 +233,14 @@ body {
 @media screen and (max-width: 1850px) {
   #navbar .subnav > a {
     font-size: 20px;
+    padding: 10px 12px 6px;
   }
 }
 
 @media screen and (max-width: 1550px) {
   #navbar .subnav > a {
     font-size: 16px;
+    padding: 10px 12px 6px;
   }
 }
 
@@ -261,7 +263,7 @@ body {
 }
 
 #content {
-  height: 300px;
+  height: 150px;
 }
 
 footer {
