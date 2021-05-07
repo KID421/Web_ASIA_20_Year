@@ -14,11 +14,15 @@ body {
   width: 100%;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 #area-top {
   background-image: url(./img/bg1.png);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 79vh;
+  height: 80vh;
 }
 
 #area-top #title {
@@ -61,6 +65,9 @@ body {
 #navbar {
   padding: 27px 0;
   text-align: center;
+  height: 15vh;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 #navbar .navbtn {
@@ -178,6 +185,7 @@ body {
 
 #navbar .navbtn:hover .subnav {
   opacity: 1;
+  display: block;
 }
 
 #navbar .subnav {
@@ -186,6 +194,7 @@ body {
   left: 20px;
   border-left: 2px solid #666;
   opacity: 0;
+  display: none;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -262,16 +271,17 @@ body {
   }
 }
 
-#content {
-  height: 150px;
-}
-
 footer {
   background: #297096;
   text-align: center;
   color: white;
   font-family: 微軟正黑體;
-  padding: 30px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 12px;
+  height: 5vh;
 }
 /*# sourceMappingURL=style1.css.map */
