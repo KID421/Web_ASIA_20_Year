@@ -151,7 +151,7 @@ body {
 
 @media screen and (max-width: 1400px) {
   #area-top {
-    background-size: 100%;
+    background-position: 0 -50px;
   }
 }
 
@@ -209,6 +209,12 @@ body {
 }
 
 @media screen and (max-width: 1600px) {
+  #navbar {
+    top: 28vw;
+  }
+}
+
+@media screen and (max-width: 1400px) {
   #navbar {
     top: 28vw;
   }
@@ -274,6 +280,12 @@ body {
 @media screen and (max-width: 1600px) {
   #navbar .navbtn {
     height: 11.5vw;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  #navbar .navbtn {
+    height: 8vw;
   }
 }
 

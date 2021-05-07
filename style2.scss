@@ -156,7 +156,8 @@ body {
 
     @media screen and (max-width: 1400px) {
         // height: 85vh;
-        background-size: 100%;
+        // background-size: 100%;
+        background-position: 0 -50px;
     }
 
     @media screen and (max-width: 1380px) {
@@ -219,6 +220,9 @@ body {
     @media screen and (max-width: 1600px) {
         top: 28vw;
     }
+    @media screen and (max-width: 1400px) {
+        top: 28vw;
+    }
 
     .row {
         display: grid;
@@ -272,6 +276,9 @@ body {
         }
         @media screen and (max-width: 1600px) {
             height: 11.5vw;
+        }
+        @media screen and (max-width: 1400px) {
+            height: 8vw;
         }
 
         &:last-child {

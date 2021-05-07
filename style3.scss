@@ -162,6 +162,12 @@ body {
         }
     }
 
+    @media screen and (max-width:1440px) {
+        .subnav {
+            top: 12px;
+            right: -170px;
+        }
+    }
     @media screen and (max-width:1280px) {
         .subnav {
             top: 10px;
