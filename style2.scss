@@ -15,7 +15,8 @@ body {
     background-repeat: no-repeat;
     background-size: 100%;
     width: 100%;
-    // overflow: hidden;
+    height: 100vh;
+    overflow: hidden;
 }
 
 #area-top {
@@ -24,7 +25,7 @@ body {
     background-image: url(./img/bg2.png);
     background-repeat: no-repeat;
     background-size: 100%;
-    background-position: 0 -10px;
+    // background-position: 0 -10px;
     height: 95vh;
     width: 100%;
     position: relative;
@@ -107,7 +108,7 @@ body {
 
     
     @media screen and (max-width: 1880px) {
-        height: 130vh;
+        // height: 130vh;
         background-size: 110%;
 
         #title {
@@ -116,7 +117,7 @@ body {
     }
 
     @media screen and (max-width: 1700px) {
-        height: 100vh;
+        // height: 100vh;
         background-size: 100%;
 
         #title {
@@ -129,7 +130,7 @@ body {
     }
 
     @media screen and (max-width: 1600px) {
-        height: 100vh;
+        // height: 100vh;
         background-size: 100%;
 
         #title {
@@ -142,7 +143,7 @@ body {
     }
 
     @media screen and (max-width: 1500px) {
-        height: 90vh;
+        // height: 90vh;
         background-size: 100%;
 
         #title-anniversary {
@@ -154,7 +155,7 @@ body {
     }
 
     @media screen and (max-width: 1400px) {
-        height: 85vh;
+        // height: 85vh;
         background-size: 100%;
     }
 
@@ -169,7 +170,7 @@ body {
     }
 
     @media screen and (max-width: 1280px) {
-        height: 75vh;
+        // height: 75vh;
         background-size: 100%;
 
         #title-box {
@@ -194,11 +195,11 @@ body {
     }
 
     @media screen and (max-width: 1150px) {
-        height: 70vh;
+        // height: 70vh;
     }
 
     @media screen and (max-width: 1024px) {
-        height: 60vh;
+        // height: 60vh;
     }
 }
 
@@ -216,7 +217,7 @@ body {
         top: 28vw;
     }
     @media screen and (max-width: 1600px) {
-        top: 27.8vw;
+        top: 28vw;
     }
 
     .row {
@@ -270,7 +271,7 @@ body {
             height: 11vw;
         }
         @media screen and (max-width: 1600px) {
-            height: 11vw;
+            height: 11.5vw;
         }
 
         &:last-child {
@@ -335,7 +336,8 @@ footer {
     text-align: center;
     color: #297096;
     font-family: 微軟正黑體;
-    padding: 30px;
+    display: grid;
+    align-items: center;
     font-size: 12px;
     height: 5vh;
 }
