@@ -4,14 +4,14 @@ window.onload = function() {
     var btn2 = document.getElementById("btn2");
 
     btn1.addEventListener("mouseenter", function() {
-        navbar.style.height = "200px";
+        navbar.style.height = "20vh";
     });
     btn1.addEventListener("mouseleave", function() {
         navbar.style.height = "15vh";
     });
 
     btn2.addEventListener("mouseenter", function() {
-        navbar.style.height = "300px";
+        navbar.style.height = "29vh";
     });
     btn2.addEventListener("mouseleave", function() {
         navbar.style.height = "15vh";

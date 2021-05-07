@@ -20,7 +20,7 @@ body {
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: 0 -10px;
-  height: 105vh;
+  height: 95vh;
   width: 100%;
   position: relative;
 }
@@ -354,10 +354,6 @@ body {
           transform: scale(1.05);
 }
 
-#content {
-  height: 0;
-}
-
 footer {
   background: white;
   text-align: center;
@@ -365,5 +361,6 @@ footer {
   font-family: 微軟正黑體;
   padding: 30px;
   font-size: 12px;
+  height: 5vh;
 }
 /*# sourceMappingURL=style2.css.map */
