@@ -11,7 +11,7 @@ window.onload = function() {
     });
 
     btn2.addEventListener("mouseenter", function() {
-        navbar.style.height = "31vh";
+        navbar.style.height = "33vh";
     });
     btn2.addEventListener("mouseleave", function() {
         navbar.style.height = "15vh";
