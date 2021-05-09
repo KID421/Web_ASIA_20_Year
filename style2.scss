@@ -179,7 +179,8 @@ body {
             transition: 0.5s;
             cursor: pointer;
             font-size: 1.5vw;
-            color: white;
+            color: $color-black;
+            // text-shadow: 0 2px 3px rgba(0, 0, 0, 0.7);
     
             &:hover {
                 transform: scale(1.05);
@@ -211,14 +212,14 @@ body {
         
         > a {
             display: block;
-            font-size: 0.8vw;
+            font-size: 1.2vw;
             text-decoration: none;
             font-weight: 0;
             padding: 3px 12px;
             transition: 0.5s;
             font-family: 微軟正黑體;
-            color: white;
-            
+            color: #e61673;
+            // text-shadow: 0 2px 3px rgba(0, 0, 0, 0.7);
 
             &:hover {
                 transform: scale(1.05);
