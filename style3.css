@@ -181,6 +181,10 @@ body {
 }
 
 @media screen and (max-width: 720px) {
+  #navbar {
+    width: 80vw;
+    left: 10vw;
+  }
   #navbar .navbtn a {
     display: block;
   }
