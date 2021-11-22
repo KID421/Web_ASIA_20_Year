@@ -246,6 +246,9 @@ body {
             // top: 10px;
         }
     }
+    @media screen and (min-width:721px) {
+        transform: scaleY(1);
+    }
     @media screen and (max-width:720px) {
 
         width: 80vw;

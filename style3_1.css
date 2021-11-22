@@ -243,6 +243,13 @@ body {
   border-bottom: none;
 }
 
+@media screen and (min-width: 721px) {
+  #navbar {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+}
+
 @media screen and (max-width: 720px) {
   #navbar {
     width: 80vw;
