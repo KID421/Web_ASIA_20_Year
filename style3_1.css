@@ -327,10 +327,10 @@ footer {
 
 @media screen and (max-width: 720px) {
   footer {
-    font-size: 14px;
+    font-size: 12px;
     position: fixed;
     bottom: 0;
-    height: 10vh;
+    height: 15vh;
     line-height: 2;
     z-index: 2;
   }
