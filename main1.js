@@ -4,6 +4,19 @@ window.onload = function () {
     var box = document.getElementById("box");
     var navbar = document.getElementById("navbar");
     var menu = document.getElementById("menu-a");
+    // var navfirst = document.getElementById("navsub-first");
+    // var subfirst = document.getElementById("subnav-first");
+    // subfirst.style.top = navfirst.offsetTop + "px";
+
+    // window.onresize = function () {
+    //     subfirst.style.top = navfirst.offsetTop + "px";
+    //     console.log(navfirst.offsetTop);
+    //     console.log(subfirst.offsetTop);
+    // }
+
+    // window.onchange = function () {
+    //     subfirst.style.top = navfirst.offsetTop + "px";
+    // }
 
     // btn1.addEventListener("mouseenter", function() {
     //     navbar.style.height = "20vh";

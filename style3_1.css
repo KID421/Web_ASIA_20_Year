@@ -199,11 +199,13 @@ body {
   margin-top: 0;
 }
 
-#navbar .navbtn > a {
+#navbar .navbtn > a, #navbar .navbtn #navsub-first {
   text-decoration: none;
   display: inline-block;
-  padding: 10px 32px;
+  padding: 0px 32px;
   font-size: 1.5em;
+  height: 60px;
+  line-height: 60px;
   color: white;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -214,30 +216,21 @@ body {
   width: 100%;
 }
 
-#navbar .navbtn > a:hover {
+#navbar .navbtn > a:hover, #navbar .navbtn #navsub-first:hover {
   background: #FF9E14;
+}
+
+#navbar .navbtn #navsub-first {
+  position: relative;
 }
 
 #navbar .navbtn:hover .subnav {
   opacity: 1;
 }
 
-#navbar .navsub {
-  position: absolute;
-  top: 16px;
-}
-
-@media screen and (max-width: 720px) {
-  #navbar .navsub {
-    position: relative;
-    top: 8px;
-  }
-}
-
 #navbar .subnav {
   position: absolute;
-  top: 16px;
-  right: -200px;
+  right: -250px;
   background: #FF9E14;
   border-radius: 0 10px 10px 0;
   -webkit-box-shadow: 2px -5px 30px rgba(0, 0, 50, 0.5);
@@ -246,12 +239,13 @@ body {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   z-index: 1;
+  top: 0;
 }
 
 #navbar .subnav > a {
   display: block;
   color: white;
-  font-size: 1.5em;
+  font-size: 24px;
   text-decoration: none;
   font-weight: 0;
   padding: 10px 30px;
@@ -267,13 +261,6 @@ body {
 
 #navbar .subnav > a:last-child {
   border-bottom: none;
-}
-
-@media screen and (max-width: 720px) {
-  #navbar .subnav {
-    border-radius: 0;
-    top: 10px;
-  }
 }
 
 @media screen and (min-width: 721px) {
@@ -294,9 +281,12 @@ body {
     -webkit-transition: 0s;
     transition: 0s;
   }
-  #navbar .navbtn a {
+  #navbar .navbtn a, #navbar .navbtn #navsub-first {
     display: block;
-    font-size: 16px;
+    font-size: 18px;
+    padding: 0;
+    height: auto;
+    line-height: auto;
   }
   #navbar .navbtn .subnav {
     height: 0;
@@ -304,6 +294,8 @@ body {
     -webkit-transition: 0.5s;
     transition: 0.5s;
     left: 0;
+    border-radius: 0;
+    top: 10px;
   }
   #navbar .navbtn:hover {
     margin-top: 10px;
@@ -311,6 +303,13 @@ body {
   #navbar .navbtn:hover .subnav {
     height: auto;
     margin-bottom: 7px;
+  }
+  #navbar .navsub {
+    position: relative;
+    top: 8px;
+  }
+  #navbar .subnav {
+    padding: 0;
   }
 }
 

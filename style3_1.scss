@@ -198,11 +198,13 @@ body {
             margin-top: 0;
         }
 
-        > a {
+        > a, #navsub-first {
             text-decoration: none;
             display: inline-block;
-            padding: 10px 32px;
+            padding: 0px 32px;
             font-size: 1.5em;
+            height: 60px;
+            line-height: 60px;
             color: white;
             transition: 0.5s;
             cursor: pointer;
@@ -216,43 +218,41 @@ body {
             }
         }
 
+        #navsub-first {
+            position: relative;
+        }
+
         &:hover .subnav {
             opacity: 1;
         }
     }
 
     .navsub {
-        position: absolute;
-        top: 16px;
-
-        @media screen and (max-width: 720px) {
-            position: relative;
-            top: 8px;
-        }
+        // position: absolute;
+        // top: 16px;
     }
 
     .subnav {
         position: absolute;
-        top: 16px;
-        right: -200px;
+        right: -250px;
         background: #FF9E14;
         border-radius: 0 10px 10px 0;
         box-shadow: 2px -5px 30px rgba(0, 0, 50, 0.5);
         opacity: 0;
         transition: 0.5s;
         z-index: 1;
+        top: 0;
         
         > a {
             display: block;
             color: white;
-            font-size: 1.5em;
+            font-size: 24px;
             text-decoration: none;
             font-weight: 0;
             padding: 10px 30px;
             transition: 0.5s;
             border-bottom: 1px solid white;
             font-family: 微軟正黑體;
-            
 
             &:hover {
                 color: #2D4583;
@@ -262,11 +262,6 @@ body {
                 border-bottom: none;
             }
         }
-
-        @media screen and (max-width: 720px) {
-            border-radius: 0;
-            top: 10px;
-        }
     }
 
     @media screen and (max-width:1440px) {
@@ -275,9 +270,13 @@ body {
             // right: -170px;
         }
     }
-    @media screen and (max-width:1280px) {
+    @media screen and (min-width: 1023px) and (max-width: 1025px) {
         .subnav {
-            // top: 10px;
+            // top: 40px;
+        }
+
+        .navsub {
+            // top: 40px;
         }
     }
     @media screen and (min-width:721px) {
@@ -293,9 +292,12 @@ body {
         transition: 0s;
 
         .navbtn {
-            a {
+            a, #navsub-first {
                 display: block;
-                font-size: 16px;
+                font-size: 18px;
+                padding: 0;
+                height: auto;
+                line-height: auto;
             }
 
             .subnav {
@@ -303,6 +305,8 @@ body {
                 position: relative;
                 transition: 0.5s;
                 left: 0;
+                border-radius: 0;
+                top: 10px;
             }
             &:hover {
                 margin-top: 10px;
@@ -316,6 +320,15 @@ body {
                 // padding: 0;
                 // margin-top: -10px;
             }
+        }
+
+        .navsub {
+            position: relative;
+            top: 8px;
+        }
+
+        .subnav {
+            padding: 0;
         }
     }
 }
