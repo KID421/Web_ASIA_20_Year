@@ -91,10 +91,11 @@ body {
     font-size: 36px;
     width: 100%;
     padding: 10px;
+    padding-right: 30px;
     position: fixed;
     top: 0;
     display: block;
-    text-align: center;
+    text-align: right;
     opacity: 0;
     transition: 0.5s;
 
@@ -125,7 +126,7 @@ body {
     height: 100%;
     display: none;
 
-    @media screen and (max-width: 721px) {
+    @media screen and (max-width: 720px) {
         display: block;
     }
 }
@@ -142,6 +143,7 @@ body {
     display: grid;
     grid-template-rows: 10vh repeat(8, 1fr);
     box-shadow: 2px 0px 50px rgba(0, 0, 50, 0.8);
+    z-index: 4;
     
     > a {
         display: inline-block;
@@ -269,7 +271,7 @@ body {
         }
     }
     @media screen and (min-width:721px) {
-        transform: scaleY(1);
+        transform: scaleY(1) !important;
     }
     @media screen and (max-width:720px) {
 
@@ -309,8 +311,17 @@ footer {
     color: #297096;
     font-family: 微軟正黑體;
     font-size: 12px;
-    z-index: 2;
+    z-index: 5;
     display: grid;
     align-items: center;
     height: 5vh;
+
+    @media screen and (max-width: 720px) {
+        font-size: 14px;
+        position: fixed;
+        bottom: 0;
+        height: 10vh;
+        line-height: 2;
+        z-index: 2;
+    }
 }
