@@ -95,6 +95,7 @@ body {
   opacity: 0;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  z-index: 5;
 }
 
 #menu a {
@@ -149,6 +150,8 @@ body {
   -webkit-box-shadow: 2px 0px 50px rgba(0, 0, 50, 0.8);
           box-shadow: 2px 0px 50px rgba(0, 0, 50, 0.8);
   z-index: 4;
+  -webkit-transform-origin: top;
+          transform-origin: top;
 }
 
 #navbar > a {
@@ -183,7 +186,7 @@ body {
   content: "";
   position: absolute;
   top: 0;
-  left: 0;
+  left: 4px;
   -webkit-transform: translateX(10%);
           transform: translateX(10%);
   width: 80%;
@@ -227,6 +230,7 @@ body {
 @media screen and (max-width: 720px) {
   #navbar .navsub {
     position: relative;
+    top: 8px;
   }
 }
 
@@ -268,6 +272,7 @@ body {
 @media screen and (max-width: 720px) {
   #navbar .subnav {
     border-radius: 0;
+    top: 10px;
   }
 }
 
@@ -280,17 +285,18 @@ body {
 
 @media screen and (max-width: 720px) {
   #navbar {
-    width: 80vw;
-    left: 10vw;
+    position: fixed;
+    width: 60vw;
+    height: 75vh;
+    left: 40vw;
     -webkit-transform: scaleY(0);
             transform: scaleY(0);
-    -webkit-transform-origin: top;
-            transform-origin: top;
     -webkit-transition: 0s;
     transition: 0s;
   }
   #navbar .navbtn a {
     display: block;
+    font-size: 16px;
   }
   #navbar .navbtn .subnav {
     height: 0;
@@ -325,6 +331,10 @@ footer {
   height: 5vh;
 }
 
+footer br {
+  display: none;
+}
+
 @media screen and (max-width: 720px) {
   footer {
     font-size: 12px;
@@ -333,6 +343,9 @@ footer {
     height: 10vh;
     line-height: 2;
     z-index: 2;
+  }
+  footer br {
+    display: block;
   }
 }
 /*# sourceMappingURL=style3_1.css.map */
