@@ -55,10 +55,17 @@ body {
 }
 
 @media screen and (max-width: 720px) {
+  #area-top {
+    background-image: url(./img/bg_mobile.jpg);
+    background-size: cover;
+  }
   #area-top #title {
     display: block;
     text-align: center;
     padding: 200px 20px;
+  }
+  #area-top #title #title-english {
+    display: none;
   }
   #area-top #title #title-box {
     width: 100%;
@@ -69,6 +76,7 @@ body {
     width: 100%;
     font-size: 24px;
     line-height: 2;
+    display: none;
   }
   #area-top #title #title-box #title-chinese br {
     display: block;
@@ -90,8 +98,8 @@ body {
 
 #menu a {
   display: inline-block;
-  width: 48px;
-  height: 48px;
+  width: 24px;
+  height: 24px;
   background-image: url(./img/menu.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -172,7 +180,7 @@ body {
 #navbar .navbtn::after {
   content: "";
   position: absolute;
-  top: 0%;
+  top: 0;
   left: 0;
   -webkit-transform: translateX(10%);
           transform: translateX(10%);
@@ -189,7 +197,7 @@ body {
 #navbar .navbtn > a {
   text-decoration: none;
   display: inline-block;
-  padding: 9px 32px;
+  padding: 10px 32px;
   font-size: 1.5em;
   color: white;
   -webkit-transition: 0.5s;
@@ -209,9 +217,20 @@ body {
   opacity: 1;
 }
 
+#navbar .navsub {
+  position: absolute;
+  top: 16px;
+}
+
+@media screen and (max-width: 720px) {
+  #navbar .navsub {
+    position: relative;
+  }
+}
+
 #navbar .subnav {
   position: absolute;
-  top: 25px;
+  top: 16px;
   right: -200px;
   background: #FF9E14;
   border-radius: 0 10px 10px 0;
@@ -220,6 +239,7 @@ body {
   opacity: 0;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  z-index: 1;
 }
 
 #navbar .subnav > a {
@@ -241,6 +261,12 @@ body {
 
 #navbar .subnav > a:last-child {
   border-bottom: none;
+}
+
+@media screen and (max-width: 720px) {
+  #navbar .subnav {
+    border-radius: 0;
+  }
 }
 
 @media screen and (min-width: 721px) {

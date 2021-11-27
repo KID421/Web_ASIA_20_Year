@@ -54,11 +54,18 @@ body {
     }
 
     @media screen and (max-width: 720px) {
-        
+
+        background-image: url(./img/bg_mobile.jpg);
+        background-size: cover;
+
         #title {    
             display: block;
             text-align: center;
             padding: 200px 20px;
+
+            #title-english {
+                display: none;
+            }
 
             #title-box {
                 width: 100%;
@@ -69,6 +76,7 @@ body {
                     width: 100%;
                     font-size: 24px;
                     line-height: 2;
+                    display: none;
 
                     br {
                         display: block;
@@ -92,8 +100,8 @@ body {
 
     a {
         display: inline-block;
-        width: 48px;
-        height: 48px;
+        width: 24px;
+        height: 24px;
         background-image: url(./img/menu.png);
         background-repeat: no-repeat;
         background-size: contain;
@@ -161,7 +169,7 @@ body {
         &::after {
             content: "";
             position: absolute;
-            top: 0%;
+            top: 0;
             left: 0;
             transform: translateX(10%);
             width: 80%;
@@ -183,7 +191,7 @@ body {
         > a {
             text-decoration: none;
             display: inline-block;
-            padding: 9px 32px;
+            padding: 10px 32px;
             font-size: 1.5em;
             color: white;
             transition: 0.5s;
@@ -203,15 +211,25 @@ body {
         }
     }
 
+    .navsub {
+        position: absolute;
+        top: 16px;
+
+        @media screen and (max-width: 720px) {
+            position: relative;
+        }
+    }
+
     .subnav {
         position: absolute;
-        top: 25px;
+        top: 16px;
         right: -200px;
         background: #FF9E14;
         border-radius: 0 10px 10px 0;
         box-shadow: 2px -5px 30px rgba(0, 0, 50, 0.5);
         opacity: 0;
         transition: 0.5s;
+        z-index: 1;
         
         > a {
             display: block;
@@ -232,6 +250,10 @@ body {
             &:last-child {
                 border-bottom: none;
             }
+        }
+
+        @media screen and (max-width: 720px) {
+            border-radius: 0;
         }
     }
 
